@@ -6,7 +6,7 @@ Esta aplicación es una API creada con Node.js, el framework Express.js y JSONPl
 
 ## Documentación de la API
 
-La documentación de la API ha sido generada automáticamente utilizando Swagger y se encuentra disponible en la siguiente dirección: [http://localhost:{puerto}/docs](http://localhost:{puerto}/docs). Asegúrate de reemplazar "{puerto}" con el número correspondiente al puerto en el que se encuentra en ejecución la API.
+La documentación de la API ha sido generada automáticamente utilizando Swagger y se encuentra disponible en la siguiente dirección: [http://localhost:{puerto}/api/v1/docs/](http://localhost:{puerto}/api/v1/docs/). Asegúrate de reemplazar "{puerto}" con el número correspondiente al puerto en el que se encuentra en ejecución la API.
 
 Esta documentación generada por Swagger proporciona una descripción exhaustiva de cada ruta disponible en la API, incluyendo los parámetros requeridos, los códigos de respuesta y ejemplos prácticos de solicitudes y respuestas.
 
@@ -40,7 +40,7 @@ La aplicación debería estar funcionando en tu entorno local.
 
 Para realizar pruebas en Swagger y acceder a las rutas protegidas, sigue estos pasos:
 
-1. Abre la documentación de la API en tu navegador accediendo a [http://localhost:{puerto}/docs](http://localhost:{puerto}/docs).
+1. Abre la documentación de la API en tu navegador accediendo a [http://localhost:{puerto}/api/v1/docs/](http://localhost:{puerto}/api/v1/docs/).
 
 2. Busca la ruta de inicio de sesión "Login", y haz clic en ella para expandirla y mostrar más detalles.
 
