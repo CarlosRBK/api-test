@@ -36,3 +36,51 @@ A continuación, se detallan los pasos necesarios para instalar y ejecutar la ap
 
 La aplicación debería estar funcionando en tu entorno local.
 
+## Realizando pruebas en Swagger
+
+Para realizar pruebas en Swagger y acceder a las rutas protegidas, sigue estos pasos:
+
+1. Abre la documentación de la API en tu navegador accediendo a [http://localhost:{puerto}/docs](http://localhost:{puerto}/docs).
+
+2. Busca la ruta de inicio de sesión "Login", y haz clic en ella para expandirla y mostrar más detalles.
+
+3. En la sección de "Request Body", proporciona el objeto JSON con el campo "username" establecido en "prueba" y el campo "password" establecido en "1234".
+
+4. Haz clic en el botón "Try it out" para enviar la solicitud de inicio de sesión a la API.
+
+5. Verifica la respuesta de la API en la sección de "Responses". Si la autenticación fue exitosa, recibirás un token de acceso en la respuesta.
+
+6. Una vez que hayas obtenido el token de acceso, haz clic en el botón "Authorize" en la parte superior de la página de Swagger.
+
+7. En el campo "Value", ingresa el token de acceso que obtuviste en el paso anterior.
+
+8. Ahora puedes utilizar las rutas protegidas de la API, como listar, crear, editar y eliminar publicaciones. Las solicitudes realizadas a estas rutas estarán autenticadas con el token proporcionado.
+
+Recuerda que el token de acceso es necesario para acceder a las rutas protegidas. Asegúrate de incluirlo en cada solicitud a las rutas que lo requieran.
+
+
+## Realizando pruebas en Postman
+
+Para realizar pruebas en Postman y acceder a las rutas protegidas, sigue estos pasos:
+
+1. Abre la aplicación de Postman en tu dispositivo.
+
+2. Importa la colección de solicitudes de la API. Puedes encontrar el archivo de la colección en el repositorio de GitHub en la ruta [[Colección POSTMAN Api Test](https://github.com/CarlosRBK/api-test/blob/main/API-Test-CarlosBenitez.postman_collection.json)].
+
+3. Una vez importada la colección, verás una lista de solicitudes predefinidas que puedes ejecutar.
+
+4. Ubica la solicitud de inicio de sesión "LOGIN". Abre la solicitud para ver los detalles.
+
+5. En el cuerpo de la solicitud, asegúrate de que los campos "username" y "password" estén establecidos correctamente. Por ejemplo, de manera predeterminada "username" es "prueba" y "password" es "1234".
+
+6. Haz clic en el botón de "Enviar" para ejecutar la solicitud de inicio de sesión. Si la autenticación es exitosa, recibirás un token de acceso en la respuesta.
+
+7. Copia el token de acceso generado.
+
+8. Ahora puedes ejecutar otras solicitudes protegidas en la colección. Asegúrate de incluir el token de acceso en la sección de encabezados de cada solicitud. Agrega un encabezado con el nombre "Authorization" y el valor "Bearer {token}", donde "{token}" es el token de acceso que copiaste en el paso anterior.
+
+9. Ejecuta las solicitudes protegidas y verifica las respuestas para asegurarte de que funcionen correctamente.
+
+Recuerda que el token de acceso es necesario para acceder a las rutas protegidas y que estas caducan cada 2 horas. Asegúrate de incluirlo en cada solicitud a las rutas que lo requieran.
+
+
