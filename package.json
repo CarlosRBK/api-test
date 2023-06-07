@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/CarlosRBK/api-test#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "axios": "^1.4.0",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
   }
 }
